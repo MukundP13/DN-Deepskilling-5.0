@@ -1,4 +1,3 @@
-
 | Algorithm | Best Case | Average Case | Worst Case | Space Complexity | Requirements |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Linear Search** | O(1) | O(n) | O(n) | O(1) | None (Works on unsorted) |
