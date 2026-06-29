@@ -1,0 +1,20 @@
+## 1. JPA (Java Persistence API / Jakarta Persistence)
+What it is: A specification or a set of rules. It is not actual software you can run.
+
+The Analogy: It’s an interface. It defines standard annotations like @Entity, @Id, and @Table to tell Java how objects should map to database tables, but it doesn't contain any code to actually move the data.
+
+Key takeaway: You cannot use JPA alone; it needs an implementation to actually do the work.
+
+## 2. Hibernate
+What it is: An ORM (Object-Relational Mapping) Framework that implements JPA.
+
+The Analogy: This is the actual worker. When you use JPA annotations, Hibernate is the software running under the hood that reads those annotations, writes the complex SQL queries, and talks directly to your MySQL, PostgreSQL, or Oracle database.
+
+Key takeaway: Hibernate is the most popular implementation of the JPA rules.
+
+## 3. Spring Data JPA
+What it is: A wrapper library created by Spring to make working with Hibernate and JPA much easier.
+
+The Analogy: In plain Hibernate, you still have to manually write boilerplate code to open database connections, handle transactions, and write basic CRUD queries. Spring Data JPA completely removes this manual labor.
+
+Key takeaway: By simply extending JpaRepository<Book, Long>, Spring automatically generates your database operations (Save, Find, Delete) without you writing a single line of SQL or Java implementation code.
